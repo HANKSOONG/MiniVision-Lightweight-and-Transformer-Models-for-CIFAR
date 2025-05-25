@@ -44,7 +44,7 @@ MiniVision/
 
 Below is a sample of DINOv2's predictions on CIFAR-10 test images:
 
-![DINOv2 Predictions](figures/prediction_for_dinov2_cifar10.png)
+![DINOv2 Predictions](https://raw.githubusercontent.com/HANKSOONG/MiniVision-Lightweight-and-Transformer-Models-for-CIFAR/main/figures/prediction_for_dinov2_cifar10.png)
 
 ---
 
@@ -52,6 +52,7 @@ Below is a sample of DINOv2's predictions on CIFAR-10 test images:
 
 Using UMAP to project model output features into 2D space:
 
-![UMAP Projection](figures/umap_embeddings/umap_dino_cifar100.png)
+![UMAP Projection](https://raw.githubusercontent.com/HANKSOONG/MiniVision-Lightweight-and-Transformer-Models-for-CIFAR/main/figures/umap_embeddings/umap_dino_cifar100.png)
+
 
 
