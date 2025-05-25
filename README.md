@@ -78,8 +78,10 @@ The models were trained or fine-tuned from ImageNet-pretrained checkpoints using
 Each model's training progress was tracked using validation accuracy and loss curves.  
 You can find these plots under:
 
+```
 figures/training_curves/
 ...
+```
 
 Plots are useful for understanding convergence behavior, early stopping, and overfitting across different architectures.
 
