@@ -44,7 +44,7 @@ MiniVision/
 
 Below is a sample of DINOv2's predictions on CIFAR-10 test images:
 
-![DINOv2 Predictions](https://raw.githubusercontent.com/HANKSOONG/MiniVision-Lightweight-and-Transformer-Models-for-CIFAR/main/figures/prediction_for_dinov2_cifar10.png)
+![DINOv2 Predictions](![Image](https://github.com/user-attachments/assets/6a0773fa-397d-4d63-9a36-47d6bf623c03))
 
 ---
 
