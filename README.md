@@ -29,3 +29,12 @@ git clone https://github.com/HANKSOONG/MiniVision-Lightweight-and-Transformer-Mo
 cd MiniVision-Lightweight-and-Transformer-Models-for-CIFAR
 pip install -r requirements.txt
 
+- ---
+🗂️ Project Structure
+MiniVision/
+├── notebooks/                  # Training notebooks
+├── pipeline/                   # Inference notebooks
+├── figures/                    # Confusion matrices, UMAPs, prediction samples
+├── requirements.txt
+└── README.md
+
