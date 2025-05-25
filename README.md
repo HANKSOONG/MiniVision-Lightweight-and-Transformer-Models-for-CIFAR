@@ -80,7 +80,8 @@ Visualize accuracy, confusion matrix, and feature space clustering
 
 ---
 
-📸 Sample Output
+## 📸 Sample Output
+
 DINOv2 predictions on CIFAR-10:
 
 ![DINOv2 Predictions](figures/predictions/prediction_for_dinov2_cifar10.png)
