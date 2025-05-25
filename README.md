@@ -1,6 +1,6 @@
 # MiniVision: Comparative Analysis of CNNs and ViTs on CIFAR-10/100
 
-MiniVision compares three deep learning architectures—**ResNet-18**, **EfficientNet-B0**, and **DINOv2 (ViT-B/14)**—on **CIFAR-10** and **CIFAR-100** datasets. The project evaluates classification accuracy, efficiency, and transfer learning performance using a unified training and inference pipeline.
+MiniVision compares **ResNet-18**, **EfficientNet-B0**, and **DINOv2 (ViT-B/14)** through training on **CIFAR-10** and **transfer learning** to **CIFAR-100**, evaluating accuracy, efficiency, and representation quality via a unified PyTorch pipeline.
 
 ---
 
