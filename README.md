@@ -49,18 +49,16 @@ All models were fine-tuned from pretrained ImageNet weights and evaluated under 
 
 ---
 
-## 🗂️ Project Structure
+## 📂 Project Structure
 
+```
 MiniVision/
-├── notebooks/ # Training notebooks
-├── pipeline/ # Inference + analysis
-├── figures/ # Training curves, UMAPs, prediction samples
+├── notebooks/                  # Training notebooks
+├── pipeline/                   # Inference notebooks
+├── figures/                    # Confusion matrices, UMAPs, prediction samples
 ├── requirements.txt
 └── README.md
-
-yaml
-Copy
-Edit
+```
 
 ---
 
@@ -77,6 +75,8 @@ Load any model (ResNet-18 / EfficientNet-B0 / DINOv2)
 Run inference on CIFAR-10 or CIFAR-100
 
 Visualize accuracy, confusion matrix, and feature space clustering
+
+```
 
 ---
 
