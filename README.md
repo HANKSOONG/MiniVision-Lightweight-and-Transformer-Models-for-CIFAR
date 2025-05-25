@@ -51,7 +51,9 @@ MiniVision/
 
 Below is a sample of DINOv2's predictions on CIFAR-10 test images:
 
-![DINOv2 Predictions](figures/predictions/prediction_for_dinov2_cifar10.png)
+![DINOv2 Predictions](figures/prediction_for_dinov2_cifar10.png)
+
+Below is a sample of DINOv2's predictions on CIFAR-100 test images(50 samples):
 
 ---
 
