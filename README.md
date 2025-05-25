@@ -30,3 +30,19 @@ MiniVision compares three deep learning architectures—**ResNet-18**, **Efficie
 git clone https://github.com/HANKSOONG/MiniVision-Lightweight-and-Transformer-Models-for-CIFAR.git
 cd MiniVision-Lightweight-and-Transformer-Models-for-CIFAR
 pip install -r requirements.txt
+
+---
+## 🗂️ Project Structure
+
+MiniVision/
+├── notebooks/                  # Training notebooks
+├── pipeline/                   # Inference notebooks
+├── figures/                    # Confusion matrices, UMAPs, prediction samples
+├── requirements.txt
+└── README.md
+
+---
+## 🔍 Sample Predictions with DINOv2
+
+Below is a sample of DINOv2's predictions on CIFAR-10 test images:
+
