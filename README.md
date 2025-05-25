@@ -1,106 +1,99 @@
-# MiniVision: Comparative Analysis of CNNs and ViTs on CIFAR-10/100
+# MiniVision: Benchmarking CNNs and Vision Transformers on CIFAR-10/100
 
-MiniVision compares **ResNet-18**, **EfficientNet-B0**, and **DINOv2 (ViT-B/14)** through training on **CIFAR-10** and **transfer learning** to **CIFAR-100**, evaluating accuracy, efficiency, and representation quality via a unified PyTorch pipeline.
+**MiniVision** benchmarks three computer vision architectures — **ResNet-18**, **EfficientNet-B0**, and **DINOv2 (ViT-B/14)** — using a unified PyTorch pipeline for training, evaluation, and feature visualization.
+
+I first trained all models on **CIFAR-10** to establish strong base performance, and then applied **transfer learning** to adapt each model to the more fine-grained **CIFAR-100** dataset. The goal was to assess both raw accuracy and the models' ability to generalize across domains.
 
 ---
 
-## 📈 Final Test Accuracy
+## 🚀 Highlights
+
+- ✅ Achieved **98.7%** test accuracy on CIFAR-10 and **91.5%** on CIFAR-100 with DINOv2
+- 🔁 Applied transfer learning techniques to adapt models from CIFAR-10 to CIFAR-100
+- 🧠 Built a modular pipeline for training, evaluation, and visualization using PyTorch
+- 📉 Integrated early stopping, learning rate scheduling, and model checkpointing
+- 🔍 Visualized model embeddings with UMAP; analyzed per-class accuracy and confusion matrices
+- 🖼️ Supported single-image predictions with dynamic model switching
+
+---
+
+## 📊 Results Overview
 
 | Model           | CIFAR-10 | CIFAR-100 |
-| --------------- | -------- | --------- |
+|----------------|----------|-----------|
 | ResNet-18       | 84.5%    | 58.4%     |
 | EfficientNet-B0 | 87.3%    | 61.0%     |
 | DINOv2-B/14     | 98.7%    | 91.5%     |
 
-> All results are based on the CIFAR-10 and CIFAR-100 datasets from [https://www.cs.toronto.edu/\~kriz/cifar.html](https://www.cs.toronto.edu/~kriz/cifar.html). Pretrained weights were used and fine-tuned where applicable.
+All models were fine-tuned from pretrained ImageNet weights and evaluated under consistent conditions.
 
 ---
 
-## 📁 Dataset and Weights
+## 🧪 Technical Approach
 
-* CIFAR datasets provided by [Alex Krizhevsky](https://www.cs.toronto.edu/~kriz/cifar.html)
-* Pretrained weights for this project:
+**Training Workflow:**
+- Trained all models on CIFAR-10 first using custom augmentations and early stopping
+- Transferred learned weights to CIFAR-100 for fine-tuning
+- For DINOv2, froze the first 9 transformer layers to preserve pretrained features
 
-  * [CIFAR-10 models](https://drive.google.com/file/d/1--vYxuc0fRE7539StX1Ts9RkAw00_XiZ/view?usp=drive_link)
-  * [CIFAR-100 models](https://drive.google.com/file/d/1Qp063eb6V9tSmYsfnJOtNH_fMHCQ_I7M/view?usp=drive_link)
+**Optimization:**
+- Data Augmentations: random crop, horizontal flip, color jitter
+- Optimizers: AdamW for Vision Transformers, SGD for CNNs
+- Regularization: weight decay, ReduceLROnPlateau scheduling, early stopping after 5 stagnant epochs
+- Mixed precision training enabled for faster GPU performance
+
+**Evaluation:**
+- Confusion matrices and per-class accuracy metrics
+- UMAP projections of learned feature embeddings
+- Cross-dataset comparison to analyze generalization
 
 ---
 
-## 🔧 Features
+## 🗂️ Project Structure
 
-* 🧠 Model architectures implemented with PyTorch
-* 🔁 Transfer learning pipeline from CIFAR-10 to CIFAR-100
-* 📈 Confusion matrix and per-class accuracy visualization
-* 🗝 UMAP projection of learned features
-* 🧪 Single-image inference support
+MiniVision/
+├── notebooks/ # Training notebooks
+├── pipeline/ # Inference + analysis
+├── figures/ # Training curves, UMAPs, prediction samples
+├── requirements.txt
+└── README.md
+
+yaml
+Copy
+Edit
 
 ---
 
-## 🚀 Quick Start
+## 📦 Try It Yourself
 
 ```bash
 git clone https://github.com/HANKSOONG/MiniVision-Lightweight-and-Transformer-Models-for-CIFAR.git
 cd MiniVision-Lightweight-and-Transformer-Models-for-CIFAR
 pip install -r requirements.txt
-```
+Then open pipeline.ipynb to:
+
+Load any model (ResNet-18 / EfficientNet-B0 / DINOv2)
+
+Run inference on CIFAR-10 or CIFAR-100
+
+Visualize accuracy, confusion matrix, and feature space clustering
 
 ---
 
-## 📂 Project Structure
+📸 Sample Output
+DINOv2 predictions on CIFAR-10:
 
-```
-MiniVision/
-├── notebooks/                  # Training notebooks
-├── pipeline/                   # Inference notebooks
-├── figures/                    # Confusion matrices, UMAPs, prediction samples
-├── requirements.txt
-└── README.md
-```
-
----
-
-## 🔍 Sample Predictions with DINOv2
-
-Below is a sample of **DINOv2-B/14**'s predictions on **CIFAR-10** test images:
-
-![DINOv2 Predictions](figures/prediction_for_dinov2_cifar10.png)
+![DINOv2 Predictions](figures/predictions/prediction_for_dinov2_cifar10.png)
 
 ❤️As you can see, 29 of them are correct, only the back of the frog was misidentified as a cat.
 
+DINOv2 predictions on CIFAR-100:
 
-Below is a sample of **DINOv2-B/14**'s predictions on **CIFAR-100** test images(50 samples):
-
-![DINOv2 Predictions](figures/prediction_for_dinov2_cifar100.png)
+![UMAP Projection](figures/umap_embeddings/umap_dino_cifar100.png)
 
 ❤️As you can see, 49 of them were correct, only the boy was misidentified as a baby (but he is indeed a **baby boy**)
 
----
-
-## 🧪 Training Strategy
-
-The models were trained or fine-tuned from ImageNet-pretrained checkpoints using PyTorch.
-
-- **CIFAR-10**: Full training from pretrained backbone with a new classification head.  
-- **CIFAR-100**: Transfer learning using frozen backbone (first 9 layers for DINOv2), with fine-tuning on classification head.  
-- **Augmentations**: Random crops, horizontal flips, brightness/contrast jitter.  
-- **Regularization**: Weight decay, learning rate scheduling (ReduceLROnPlateau), early stopping after 5 no-improve epochs.  
-- **Optimizers**: AdamW for ViTs, SGD for CNNs.  
-- **Mixed Precision**: Enabled on GPU to accelerate training.
-
-Each model's training progress was tracked using validation accuracy and loss curves.  
-You can find these plots under:
-
-```
-figures/training_curves/
-...
-```
-
-Plots are useful for understanding convergence behavior, early stopping, and overfitting across different architectures.
-
-
----
-
-## 🧪 CIFAR-100 Visualization
+UMAP Embeddings for CIFAR-100:
 
 For **DinoV2-B/14**, using UMAP to project model output features into 2D space:
 
@@ -113,3 +106,12 @@ and UMAP for **EfficientNet-B0**
 ![UMAP Projection](figures/umap_embeddings/umap_eff_cifar100.png)
 
 It can be seen that ResNet-18 and EfficientNet-B0 are almost not clustered compared to dinov2-B14, which largely reflects their low accuracy in a large number of classification fields (cifar100).
+
+---
+
+🔑 Key Takeaways
+DINOv2 significantly outperforms CNN baselines in both accuracy and feature clarity
+
+EfficientNet-B0 offers a solid trade-off between accuracy and efficiency
+
+Transfer learning from CIFAR-10 to CIFAR-100 reveals generalization gaps in CNNs
