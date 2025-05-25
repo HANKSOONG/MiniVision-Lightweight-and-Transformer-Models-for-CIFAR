@@ -25,7 +25,7 @@ I first trained all models on **CIFAR-10** to establish strong base performance,
 | EfficientNet-B0 | 87.3%    | 61.0%     |
 | DINOv2-B/14     | 98.7%    | 91.5%     |
 
-All models were fine-tuned from pretrained ImageNet weights and evaluated under consistent conditions.
+> All results are based on the CIFAR-10 and CIFAR-100 datasets from [https://www.cs.toronto.edu/\~kriz/cifar.html](https://www.cs.toronto.edu/~kriz/cifar.html). Pretrained weights were used and fine-tuned where applicable.
 
 ---
 
@@ -117,3 +117,16 @@ DINOv2 significantly outperforms CNN baselines in both accuracy and feature clar
 EfficientNet-B0 offers a solid trade-off between accuracy and efficiency
 
 Transfer learning from CIFAR-10 to CIFAR-100 reveals generalization gaps in CNNs
+
+---
+
+## 📁 Dataset and Weights
+
+* CIFAR datasets provided by [Alex Krizhevsky](https://www.cs.toronto.edu/~kriz/cifar.html)
+* Pretrained weights for this project:
+
+  * [CIFAR-10 models](https://drive.google.com/file/d/1--vYxuc0fRE7539StX1Ts9RkAw00_XiZ/view?usp=drive_link)
+  * [CIFAR-100 models](https://drive.google.com/file/d/1Qp063eb6V9tSmYsfnJOtNH_fMHCQ_I7M/view?usp=drive_link)
+
+
+
