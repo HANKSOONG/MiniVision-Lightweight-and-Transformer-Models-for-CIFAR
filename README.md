@@ -55,6 +55,8 @@ Below is a sample of DINOv2's predictions on CIFAR-10 test images:
 
 Below is a sample of DINOv2's predictions on CIFAR-100 test images(50 samples):
 
+![DINOv2 Predictions](figures/prediction_for_dinov2_cifar100.png)
+
 ---
 
 ## 🧪 CIFAR-100 Visualization (DINOv2)
