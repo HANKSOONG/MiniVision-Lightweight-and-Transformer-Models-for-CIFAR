@@ -84,13 +84,13 @@ Visualize accuracy, confusion matrix, and feature space clustering
 
 DINOv2 predictions on CIFAR-10:
 
-![DINOv2 Predictions](figures/predictions/prediction_for_dinov2_cifar10.png)
+![DINOv2 Predictions](figures/prediction_for_dinov2_cifar10.png)
 
 ❤️As you can see, 29 of them are correct, only the back of the frog was misidentified as a cat.
 
 DINOv2 predictions on CIFAR-100:
 
-![UMAP Projection](figures/umap_embeddings/umap_dino_cifar100.png)
+![DINOv2 Predictions](figures/prediction_for_dinov2_cifar100.png)
 
 ❤️As you can see, 49 of them were correct, only the boy was misidentified as a baby (but he is indeed a **baby boy**)
 
