@@ -76,4 +76,4 @@ And this is UMAP for **ResNet-18**:
 and UMAP for **EfficientNet-B0**
 ![UMAP Projection](figures/umap_embeddings/umap_eff_cifar100.png)
 
-It can be seen that ResNet-18 and EfficientNet-B0 are almost not clustered compared to dinov2-B14, which largely reflects their low accuracy.
+It can be seen that ResNet-18 and EfficientNet-B0 are almost not clustered compared to dinov2-B14, which largely reflects their low accuracy in a large number of classification fields (cifar100).
