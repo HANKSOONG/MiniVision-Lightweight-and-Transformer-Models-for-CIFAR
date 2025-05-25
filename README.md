@@ -53,14 +53,14 @@ Below is a sample of **DINOv2**'s predictions on **CIFAR-10** test images:
 
 ![DINOv2 Predictions](figures/prediction_for_dinov2_cifar10.png)
 
-As you can see, 29 of them are correct, only the back of the frog was misidentified as a cat.
+❤️As you can see, 29 of them are correct, only the back of the frog was misidentified as a cat.
 
 
 Below is a sample of **DINOv2**'s predictions on **CIFAR-100** test images(50 samples):
 
 ![DINOv2 Predictions](figures/prediction_for_dinov2_cifar100.png)
 
-As you can see, 49 of them were correct, only the boy was misidentified as a baby (but he is indeed a baby boy)
+❤️As you can see, 49 of them were correct, only the boy was misidentified as a baby (but he is indeed a baby boy)
 
 ---
 
