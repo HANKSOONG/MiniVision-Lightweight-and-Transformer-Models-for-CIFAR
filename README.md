@@ -12,6 +12,18 @@ MiniVision compares three deep learning architectures—**ResNet-18**, **Efficie
 | EfficientNet-B0 | 87.3%    | 61.0%     |
 | DINOv2-B/14     | 98.7%    | 91.5%     |
 
+> All results are based on the CIFAR-10 and CIFAR-100 datasets from [https://www.cs.toronto.edu/\~kriz/cifar.html](https://www.cs.toronto.edu/~kriz/cifar.html). Pretrained weights were used and fine-tuned where applicable.
+
+---
+
+## 📁 Dataset and Weights
+
+* CIFAR datasets provided by [Alex Krizhevsky](https://www.cs.toronto.edu/~kriz/cifar.html)
+* Pretrained weights for this project:
+
+  * [CIFAR-10 models](https://drive.google.com/file/d/1--vYxuc0fRE7539StX1Ts9RkAw00_XiZ/view?usp=drive_link)
+  * [CIFAR-100 models](https://drive.google.com/file/d/1Qp063eb6V9tSmYsfnJOtNH_fMHCQ_I7M/view?usp=drive_link)
+
 ---
 
 ## 🔧 Features
