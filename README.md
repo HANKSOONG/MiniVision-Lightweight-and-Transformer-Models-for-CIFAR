@@ -20,3 +20,12 @@ MiniVision compares three deep learning architectures—**ResNet-18**, **Efficie
 - 🧭 UMAP projection of learned features
 - 🪄 Single-image inference support
 
+- ---
+
+## 🚀 Quick Start
+
+```bash
+git clone https://github.com/HANKSOONG/MiniVision-Lightweight-and-Transformer-Models-for-CIFAR.git
+cd MiniVision-Lightweight-and-Transformer-Models-for-CIFAR
+pip install -r requirements.txt
+
