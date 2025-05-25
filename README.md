@@ -49,14 +49,14 @@ MiniVision/
 
 ## 🔍 Sample Predictions with DINOv2
 
-Below is a sample of **DINOv2**'s predictions on **CIFAR-10** test images:
+Below is a sample of **DINOv2-B/14**'s predictions on **CIFAR-10** test images:
 
 ![DINOv2 Predictions](figures/prediction_for_dinov2_cifar10.png)
 
 ❤️As you can see, 29 of them are correct, only the back of the frog was misidentified as a cat.
 
 
-Below is a sample of **DINOv2**'s predictions on **CIFAR-100** test images(50 samples):
+Below is a sample of **DINOv2-B/14**'s predictions on **CIFAR-100** test images(50 samples):
 
 ![DINOv2 Predictions](figures/prediction_for_dinov2_cifar100.png)
 
@@ -66,6 +66,14 @@ Below is a sample of **DINOv2**'s predictions on **CIFAR-100** test images(50 sa
 
 ## 🧪 CIFAR-100 Visualization
 
-For **DinoV2**, using UMAP to project model output features into 2D space:
+For **DinoV2-B/14**, using UMAP to project model output features into 2D space:
 
 ![UMAP Projection](figures/umap_embeddings/umap_dino_cifar100.png)
+
+And this is UMAP for **ResNet-18**:
+![UMAP Projection](figures/umap_embeddings/umap_res_cifar100.png)
+
+and UMAP for **EfficientNet-B0**
+![UMAP Projection](figures/umap_embeddings/umap_eff_cifar100.png)
+
+It can be seen that ResNet-18 and EfficientNet-B0 are almost not clustered compared to dinov2-B14, which largely reflects their low accuracy.
