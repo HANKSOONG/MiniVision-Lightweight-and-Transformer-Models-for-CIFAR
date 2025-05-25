@@ -110,7 +110,8 @@ It can be seen that ResNet-18 and EfficientNet-B0 are almost not clustered compa
 
 ---
 
-🔑 Key Takeaways
+## 🔑 Key Takeaways
+
 DINOv2 significantly outperforms CNN baselines in both accuracy and feature clarity
 
 EfficientNet-B0 offers a solid trade-off between accuracy and efficiency
