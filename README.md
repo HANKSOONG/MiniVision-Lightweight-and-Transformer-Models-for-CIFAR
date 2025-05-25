@@ -60,7 +60,29 @@ Below is a sample of **DINOv2-B/14**'s predictions on **CIFAR-100** test images(
 
 ![DINOv2 Predictions](figures/prediction_for_dinov2_cifar100.png)
 
-❤️As you can see, 49 of them were correct, only the boy was misidentified as a baby (but he is indeed a baby boy)
+❤️As you can see, 49 of them were correct, only the boy was misidentified as a baby (but he is indeed a **baby boy**)
+
+---
+
+## 🧪 Training Strategy
+
+The models were trained or fine-tuned from ImageNet-pretrained checkpoints using PyTorch.
+
+- **CIFAR-10**: Full training from pretrained backbone with a new classification head.  
+- **CIFAR-100**: Transfer learning using frozen backbone (first 9 layers for DINOv2), with fine-tuning on classification head.  
+- **Augmentations**: Random crops, horizontal flips, brightness/contrast jitter.  
+- **Regularization**: Weight decay, learning rate scheduling (ReduceLROnPlateau), early stopping after 5 no-improve epochs.  
+- **Optimizers**: AdamW for ViTs, SGD for CNNs.  
+- **Mixed Precision**: Enabled on GPU to accelerate training.
+
+Each model's training progress was tracked using validation accuracy and loss curves.  
+You can find these plots under:
+
+figures/training_curves/
+...
+
+Plots are useful for understanding convergence behavior, early stopping, and overfitting across different architectures.
+
 
 ---
 
