@@ -38,3 +38,20 @@ MiniVision/
 ├── requirements.txt
 └── README.md
 
+- ---
+
+## 🔍 Sample Predictions with DINOv2
+
+Below is a sample of DINOv2's predictions on CIFAR-10 test images:
+
+![DINOv2 Predictions](figures/predictions/prediction_for_dinov2_cifar10.png)
+
+---
+
+## 🧬 CIFAR-100 Visualization (DINOv2)
+
+Using UMAP to project model output features into 2D space:
+
+![UMAP Projection](figures/umap_embeddings/umap_dino_cifar100.png)
+
+
