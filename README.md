@@ -52,6 +52,6 @@ Below is a sample of DINOv2's predictions on CIFAR-10 test images:
 
 Using UMAP to project model output features into 2D space:
 
-![UMAP Projection](figures/umap_embeddings/umap_dino_cifar100.png)
+![UMAP Projection](./figures/umap_embeddings/umap_dino_cifar100.png)
 
 
