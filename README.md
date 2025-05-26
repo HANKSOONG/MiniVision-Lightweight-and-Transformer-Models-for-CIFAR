@@ -87,13 +87,13 @@ Then open `pipeline.ipynb` to:
 
 ![DINOv2 Predictions](figures/prediction_for_dinov2_cifar10.png)
 
-DINOv2-B/14 correctly predicted 29 out of 30 samples on CIFAR-10. The misclassification involved visual similarity between frog and cat classes.
+> DINOv2-B/14 correctly predicted 29 out of 30 samples on CIFAR-10. The misclassification involved visual similarity between frog and cat classes.
 
 **DINOv2 predictions on CIFAR-100:**
 
 ![DINOv2 Predictions](figures/prediction_for_dinov2_cifar100.png)
 
-DINOv2-B/14 correctly predicted 49 out of 50 samples on CIFAR-100. The misclassified image involved a visual overlap between the categories "boy" and "baby," highlighting challenges in fine-grained classification.
+> DINOv2-B/14 correctly predicted 49 out of 50 samples on CIFAR-100. The misclassified image involved a visual overlap between the categories "boy" and "baby," highlighting challenges in fine-grained classification.
 
 **UMAP Embeddings for CIFAR-100:**
 
@@ -104,7 +104,7 @@ DINOv2-B/14 correctly predicted 49 out of 50 samples on CIFAR-100. The misclassi
 * EfficientNet-B0:
   ![UMAP EfficientNet](figures/umap_embeddings/umap_eff_cifar100.png)
 
-The UMAP visualizations show that DINOv2 learns more compact and well-separated feature clusters, while ResNet-18 and EfficientNet-B0 display significantly less distinct grouping, aligning with their lower performance on CIFAR-100.
+> The UMAP visualizations show that DINOv2 learns more compact and well-separated feature clusters, while ResNet-18 and EfficientNet-B0 display significantly less distinct grouping, aligning with their lower performance on CIFAR-100.
 
 ---
 
