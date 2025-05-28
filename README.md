@@ -8,12 +8,12 @@ I first trained all models on **CIFAR-10** to establish strong base performance,
 
 ## 🚀 Highlights
 
-* ✅ Achieved **98.7%** test accuracy on CIFAR-10 and **91.5%** on CIFAR-100 with DINOv2
-* 🔁 Applied transfer learning techniques to adapt models from CIFAR-10 to CIFAR-100
-* 🧠 Built a modular pipeline for training, evaluation, and visualization using PyTorch
-* 📉 Integrated early stopping, learning rate scheduling, and model checkpointing
-* 🔍 Visualized model embeddings with UMAP; analyzed per-class accuracy and confusion matrices
-* 🖼️ Supported single-image predictions with dynamic model switching
+* **Achieved** **98.7%** test accuracy on CIFAR-10 and **91.5%** on CIFAR-100 with DINOv2
+* **Applied** transfer learning techniques to adapt models from CIFAR-10 to CIFAR-100
+* **Built** a modular pipeline for training, evaluation, and visualization using PyTorch
+* **Integrated** early stopping, learning rate scheduling, and model checkpointing
+* **Visualized** model embeddings with UMAP; analyzed per-class accuracy and confusion matrices
+* **Supported** single-image predictions with dynamic model switching
 
 ---
 
