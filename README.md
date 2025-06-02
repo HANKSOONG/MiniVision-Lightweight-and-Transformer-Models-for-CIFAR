@@ -59,6 +59,7 @@ MiniVision/
 ├── notebooks/                  # Training notebooks
 ├── pipeline/                   # Inference notebooks
 ├── figures/                    # Confusion matrices, UMAPs, prediction samples
+├── LICENSE   
 ├── requirements.txt
 └── README.md
 ```
