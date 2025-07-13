@@ -6,7 +6,7 @@ I first trained all models on **CIFAR-10** to establish strong base performance,
 
 ---
 
-## 🚀 Highlights
+##  Highlights
 
 * **Achieved** **98.7%** test accuracy on CIFAR-10 and **91.5%** on CIFAR-100 with DINOv2
 * **Applied** transfer learning techniques to adapt models from CIFAR-10 to CIFAR-100
@@ -17,7 +17,7 @@ I first trained all models on **CIFAR-10** to establish strong base performance,
 
 ---
 
-## 📊 Results Overview
+##  Results Overview
 
 | Model           | CIFAR-10 | CIFAR-100 |
 | --------------- | -------- | --------- |
@@ -29,7 +29,7 @@ I first trained all models on **CIFAR-10** to establish strong base performance,
 
 ---
 
-## 🧪 Technical Approach
+##  Technical Approach
 
 **Training Workflow:**
 
@@ -52,7 +52,7 @@ I first trained all models on **CIFAR-10** to establish strong base performance,
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 MiniVision/
@@ -82,7 +82,7 @@ Then open `pipeline.ipynb` to:
 
 ---
 
-## 📸 Sample Output
+##  Sample Output
 
 **DINOv2 predictions on CIFAR-10:**
 
@@ -109,7 +109,7 @@ Then open `pipeline.ipynb` to:
 
 ---
 
-## 🔑 Key Takeaways
+##  Key Takeaways
 
 * DINOv2 significantly outperforms CNN baselines in both accuracy and feature clarity
 * EfficientNet-B0 offers a strong balance between performance and efficiency
@@ -117,7 +117,7 @@ Then open `pipeline.ipynb` to:
 
 ---
 
-## 📁 Dataset and Weights
+##  Dataset and Weights
 
 * CIFAR datasets provided by [Alex Krizhevsky](https://www.cs.toronto.edu/~kriz/cifar.html)
 * Pretrained weights for this project:
